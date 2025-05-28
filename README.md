@@ -1,59 +1,30 @@
-# SkillSync – AI-Powered Resume Builder & Job Tracker
+# SkillSync – MERN Resume Builder & Job Tracker (Minimal Starter)
 
-SkillSync is a MERN stack web application that helps users build resumes and track job applications. It's built using:
+This repository contains a minimal MERN stack app boilerplate for SkillSync.
 
-- React (Tailwind CSS) for the frontend
-- Node.js + Express + MongoDB for the backend
-- JWT for authentication
+## Backend Setup
 
-## Features
-- User Authentication (JWT)
-- Resume Builder Form
-- Job Application Tracker
-- Responsive Dashboard
-
-## Getting Started
-
-### 1. Clone the repo
-
+1. Go to `/server`
+2. Run:
 ```bash
-git clone https://github.com/your-username/SkillSync.git
-cd SkillSync
+npm install express mongoose cors dotenv
+```
+3. Create a `.env` file based on `.env.example` with your MongoDB URI and JWT secret.
+4. Start the server:
+```bash
+node index.js
 ```
 
-### 2. Setup the Backend
+## Frontend Setup
 
+1. Go to `/client`
+2. Run:
 ```bash
-cd server
-npm install
-cp .env.example .env
-# Add your MONGO_URI and JWT_SECRET to .env
-npm run dev
-```
-
-### 3. Setup the Frontend
-
-```bash
-cd ../client
 npm install
 npm start
 ```
 
-### 4. Deploy
+## Deployment
 
-- **Frontend**: Deploy `/client` folder on **Netlify**
-- **Backend**: Deploy `/server` folder on **Render**
-
-## .env Setup
-
-### `/server/.env.example`
-```
-PORT=5000
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-```
-
----
-
-## License
-MIT License
+- Backend: Deploy `/server` on Render or similar.
+- Frontend: Deploy `/client` on Netlify.
